@@ -1,8 +1,12 @@
+let tweets = [];
+
 function addTweet() {
 	// FILL ME IN
-	var div = document.getElementById('tweets-list');
+	let maxChar = 140;
+	var div = document.getElementById('tweetsList');
 	var tweet = generateTweetHtml(document.getElementById("tweetInput").value);
-	div.innerHTML = tweet += div.innerHTML;
+	tweets.push(tweet);
+	div.innerHTML = tweets;
 }
 
 function updateCharacterCount(limitField, limitCount, limitNum) {
@@ -26,18 +30,20 @@ function generateTweetHtml(tweetText) {
 							<p>${tweetText}</p>
 							<ul class="nav nav-pills nav-pills-custom">
 								<li><a href="#"><span class="glyphicon glyphicon-share-alt"></span></a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-retweet"></span></a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-retweet" onclick="reTweet()"></span></a></li>
 								<li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
 								<li><a href="#"><span class="glyphicon glyphicon-option-horizontal"></span></a></li>
 							</ul>
 						</div>
 
 					</div>`;
-
-function reTweet()
-
+}
 
 
-
+function reTweet() {
 
 }
+
+
+
+

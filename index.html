@@ -85,13 +85,13 @@
 								<form name="tweetForm">
 								<input type="text" class="form-control" id="tweetInput" onKeyDown="updateCharacterCount(this.form.tweetInput,this.form.countdown,140);" 
 								onKeyUp="updateCharacterCount(this.form.tweetInput,this.form.countdown,140);">
-								<button class="pull-right btn btn-info" onclick="addTweet()"> Tweet </button>
+								<button type="button" class="pull-right btn btn-info" onclick="addTweet()"> Tweet </button>
 							</div>
 						</div>
 					</div>
 					<div id="char-remaining"> <input id="cntdwn" readonly="" type="text" name="countdown" size="3" value="140"> Characters Remaining </div>
 				</div>
-				<div class="panel-body" id="tweets-list">
+				<div class="panel-body" id="tweetsList">
 					<div class="media">
 						<a class="media-left" href="#fake">
 							<img alt="" class="media-object img-rounded" src="http://placehold.it/64x64">
